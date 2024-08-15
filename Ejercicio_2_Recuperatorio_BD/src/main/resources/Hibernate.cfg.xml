@@ -3,7 +3,7 @@
     <session-factory>
         <!-- JDBC Database connection settings -->
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/recomendaciones</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/Biblioteca</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">123456</property>
 
@@ -16,8 +16,7 @@
         <property name="hibernate.format_sql">false</property>
 
         <!-- Mention annotated class -->
-        <mapping class="org.example.entities.categorias"/>
-        <mapping class="org.example.entities.productos"/>
-        <mapping class="org.example.entities.recomendaciones"/>
+        <mapping class="org.example.entities.libros"/>
+        <mapping class="org.example.entities.valoraciones"/>
     </session-factory>
 </hibernate-configuration>
